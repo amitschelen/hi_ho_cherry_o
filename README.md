@@ -32,8 +32,11 @@ It seems that the answer is, "Somewhat". The 4th player won fewer of the played 
 Now let's begin the analysis of game length and number of turns
 # Graphs and Such
 ![quantiles](https://github.com/amitschelen/hi_ho_cherry_o/blob/main/03%20quantiles.png)
+
 ![hist](https://github.com/amitschelen/hi_ho_cherry_o/blob/main/04%20distribution%20of%20game%20lengths%20hist.png)
+
 ![violin](https://github.com/amitschelen/hi_ho_cherry_o/blob/main/05%20distribution%20of%20game%20lengths%20violin.png)
+
 ![cumulative percent ended](https://github.com/amitschelen/hi_ho_cherry_o/blob/main/07%20cumulative%20percent%20of%20games%20ended.png)
 
 We can see a few things from the figures above. 
