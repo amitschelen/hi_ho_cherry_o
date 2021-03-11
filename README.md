@@ -3,7 +3,7 @@ I don't want anyone to get the wrong idea about this project. I hate Hi Ho! Cher
 
 The 'game', such as it is, has players trying to remove cherries from their tree. Each player starts with 10 cherries in their tree. Players take turns spinning a spinner and the result tells the player how many cherries to remove from their tree to their basket. However, the spinner results could also have players returning two cherries to their trees or possibly even spilling their basket and putting all of their cherries back. The game ends when someone successfully empties their tree. The player that does so wins immediately.
 
-Ironically, the same things that make it a terrible game make it a good candidate for analysis. The first thing I did was make a simulation of the "game". The only decision the user gets to make is how many players to play with (the right answer is 0). Then the game runs on autopilot.
+Ironically, the same things that make it a terrible game make it a good candidate for analysis. The first thing I did was make [a simulation of the "game"](https://github.com/amitschelen/hi_ho_cherry_o/blob/main/hi_ho_cherry_o_game.py). The only decision the user gets to make is how many players to play with (the right answer is 0). Then the game runs on autopilot.
 
 One result of these rules is that a game could possibly last forever. Every turn, players have a 1 in 7 chance of starting the game over. With no way to end a game besides emptying a tree, games can drag on and on and results in some very **LONG** games. I have definitely played games of this with my kids that reflected this. They at least *felt* like they took forever. 
 
@@ -20,7 +20,7 @@ With those questions in mind, let's start with the theoretical probability. I di
 
 One immediate takeaway of the graph above is that games will likely end much quicker as soon as you add a second player. *(Why in the world would anyone ever play this game alone?)* Then for each player you add after that, the probability of the game ending in earlier rounds increases. This makes sense to me, since each player you add increases the number of people that can trigger the end of the game. 
 
-The next step is to model the game with a Monte Carlo simulation to gather some data for analysis to see how the theoretical probabilities compare to what is seen in practice. In this simulation, the game is played a certain number of times (say, 1000) and then those plays are repeated over a few iterations (say, 10). I then use the data from these iterations to look at characteristics of the games played.
+The next step is to model the game with a [Monte Carlo simulation](https://github.com/amitschelen/hi_ho_cherry_o/blob/main/Hi%20Ho!%20Cherry-O%20stats.py) to gather some data for analysis to see how the theoretical probabilities compare to what is seen in practice. In this simulation, the game is played a certain number of times (say, 1000) and then those plays are repeated over a few iterations (say, 10). I then use the data from these iterations to look at characteristics of the games played.
 # First Player Advantage?
 The first question I had was about turn order. How does going first affect your chance of winning? Since the game ends as soon as someone empties their tree, it seems like going first should give you the earliest chance to do that and thus a greater chance of winning. So let's take a look at who wins at each player count.
 So, is there a first-player advantage? 
